@@ -1,6 +1,8 @@
 <html>
   <title>DC382's Ultimate Tech</title>
-  <head><link rel="shortcut icon" href="https://i.ibb.co/2NYnHbm/Screenshot-2021-05-05-07-50-48.png" /></head>
+  <head>
+    <link rel="shortcut icon" href="https://i.ibb.co/2NYnHbm/Screenshot-2021-05-05-07-50-48.png" />
+  </head>
   <center>
     <h1>
       A.S.B.F.
@@ -9,12 +11,16 @@
     <br>
   <img src="https://i.ibb.co/0KDH1yg/Screenshot-2021-04-30-17-55-44.png" alt="Screenshot-2021-04-30-17-55-44" border="0" />
     <br>
-  <button onclick="a()">MAKE</button></center>
+   <input id="TXT" size="163" placeholder="The text of the bookmarklet goes here...">
+<br>
+    <button onclick="a()">MAKE</button></center>
 <script> 
 function a(){
-var r = prompt("Text you want.")
-document.getElementById("demo").innerHTML = ('<style>body { background:#fff; font-family:Arial; margin:0; padding:0; }</style><title>Tech</title><a href="javascript:var z=window.open();z.document.write(&apos;'+r+'&apos;)"> '+r+'</a><br> Base Code: <input value="javascript:var z=window.open();z.document.write(&apos;'+r+'&apos;)" size="152" readonly>')}
+var r = document.getElementById("TXT").value
+document.getElementById("01").innerHTML = ('<style>body { background:#fff; font-family:Arial; margin:0; padding:0; }</style><title>Tech</title><a href="javascript:var z=window.open();z.document.write(&apos;'+r+'&apos;)"> '+r+'</a><br> Base Code: <input value="javascript:var z=window.open();z.document.write(&apos;'+r+'&apos;)" size="152" readonly>')}
 </script>
- <br>Drag Any To Bookmarks Bar to have for the future.<br>
-  <p id="demo"></p>
+ <br>
+  Drag Any To Bookmarks Bar to have for the future.
+  <br>
+  <p id="01"></p>
 </html>
