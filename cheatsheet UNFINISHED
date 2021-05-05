@@ -1,0 +1,26 @@
+<p id="02"></p>
+[b][/b] - <b>bold</b>
+[i][/i] - <i>Italics</i>
+[u][/u] - <u>Underline</u>
+[s][/s] - <s>Strikethrough</s>
+[big][/big] - big
+[small][/small] - small
+[list][/list] - creates list
+[list=(number)][/list] - list starting at number
+[*] - List Item
+[quote=(person)][/quote] - Quote someone
+[url][/url] - URL
+[img][/img] - Image. Does not work if you are a new scratcher.
+[color=][/color] - Simple Colors, like red and blue.
+[color=(hex)][/color] - Color of any.
+[center][/center] - 
+[wiki=(wiki page)][/wiki] - 
+[wikipedia=(wikipedia page)][/wikipedia] - 
+[wp=(wikipedia page)][/wp] - 
+[google=(term)][/google] - 
+[dictonary=(word)][/dictonary] - 
+[dic=(word)][/dic] - 
+[code][/code] - 
+[code=python][/code] - 
+[code=JSON][/code] - 
+[code=HTML][/code] - 
