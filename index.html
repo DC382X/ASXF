@@ -17,10 +17,6 @@ Name: <input id="IXI" size="157" placeholder="The name of the bookmarklet goes h
   <center><button onclick="make()">MAKE</button><button onclick="OSI()">Set name to text</button><<button onclick="reset()">Reset</button>
   </center>
 <script> 
-  var v = document.cookie;
-  if(v != ""){
-    var v = 0
-    }
 function make(){
 var r = document.getElementById("TXT").value
 var s = document.getElementById("IXI").value
@@ -29,9 +25,6 @@ if(s == ""){
     document.getElementById("IXI").value = s
 }
 document.getElementById("01").innerHTML = ('<style>body { background:#fff; font-family:Arial; margin:0; padding:0; }</style><title>Tech</title><a href="javascript:var z=window.open();z.document.write(&apos;'+r+'&apos;)"> '+s+'</a><br> Base Code: <input value="javascript:var z=window.open();z.document.write(&apos;'+r+'&apos;)" size="152" readonly>')}
-v++
-document.cookie = "done="+v+"; expires=Fri, 1 Jan 2100 12:00:00 UTC; path=/";
-document.getElementById("02").innerHTML = "Thanks for making "+v+" Bookmarklets with this!!"
 </script>
 <script>
 function OSI() {
