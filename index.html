@@ -14,7 +14,8 @@
   </center>
 Text: <input id="TXT" size="158" placeholder="The text of the bookmarklet goes here..."><br>
 Name: <input id="IXI" size="157" placeholder="The name of the bookmarklet goes here..."><br>
-  <center><button onclick="OSI()">Set name to text</button><button onclick="reset()">Reset</button>
+  <center><button onclick="OSI()">Set name to text</button><button onclick="reset()">Reset</button><br>
+    <button onclick="help()">Help</button>
   </center>
 <script> 
 var p = 0
@@ -25,6 +26,9 @@ document.getElementById("01").innerHTML = ('<style>body { background:#fff; font-
 },250)
 </script>
 <script>
+  function help(){
+  document.getElementById("02").innerHTML = ('Tip: Use "<br>" to break lines and have seperated code.')
+  }
 function OSI() {
  var m = document.getElementById("TXT").value
     document.getElementById("IXI").value = m
