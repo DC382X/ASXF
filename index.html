@@ -18,7 +18,7 @@ Name: <input id="IXI" size="157" placeholder="The name of the bookmarklet goes h
     <button onclick="help()">Help</button>
   </center>
 <script> 
-var p = 0
+var count = 0
 setInterval(function(){
 var r = document.getElementById("TXT").value
 var s = document.getElementById("IXI").value
@@ -28,6 +28,8 @@ document.getElementById("01").innerHTML = ('<style>body { background:#fff; font-
 <script>
   function help(){
   document.getElementById("02").innerHTML = ('Tips: Use "&lt;br&gt;" to break lines and have seperated code.<br>Use "&lt;script&gt;&lt;/script&gt;" for some really fancy stuff.')
+  count++
+  document.getElementById("03").innerHTML = ('&Omega; x '+count)
   }
 function OSI() {
  var m = document.getElementById("TXT").value
@@ -45,4 +47,6 @@ function reset() {
   <p id="01"></p>
 <br>
   <p id="02"></p>
+  <br>
+    <p id="03"></p>
 </html>
