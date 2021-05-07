@@ -18,6 +18,7 @@ Name: <input id="IXI" size="157" placeholder="The name of the bookmarklet goes h
     <button onclick="help()">Help</button>
   </center>
 <script> 
+var lv = 1
 var count = 0
 setInterval(function(){
 var r = document.getElementById("TXT").value
@@ -30,8 +31,8 @@ document.getElementById("01").innerHTML = ('<style>body { background:#fff; font-
 },250)
 </script>
 <script>
-  var lv = 1
   function help(){
+    count++
   document.getElementById("02").innerHTML = ('Tips: Use "&lt;br&gt;" to break lines and have seperated code.<br>Use "&lt;script&gt;&lt;/script&gt;" for some really fancy stuff.')
     var count = count - -1*lv
     var need = lv * lv
