@@ -12,15 +12,15 @@
 [url][/url] - URL
 [img][/img] - Image. Does not work if you are a new scratcher.
 [color=][/color] - Simple Colors, like red and blue.
-[color=(hex)][/color] - Color of any.
-[center][/center] - 
-[wiki=(wiki page)][/wiki] - 
-[wikipedia=(wikipedia page)][/wikipedia] - 
-[wp=(wikipedia page)][/wp] - 
-[google=(term)][/google] - 
-[dictonary=(word)][/dictonary] - 
-[dic=(word)][/dic] - 
-[code][/code] - 
-[code=python][/code] - 
-[code=JSON][/code] - 
-[code=HTML][/code] - 
+[color=(hex)][/color] - Color of any hex. <input type="color">
+[center][/center] - Centers text,
+[wiki=(wiki page)][/wiki] - Links to Scratch Wiki (of same name)
+[wikipedia=(wikipedia page)][/wikipedia] - Links to Wikipedia page
+[wp=(wikipedia page)][/wp] - See above.
+[google=(term)][/google] - Googles the term.
+[dictonary=(word)][/dictonary] - Links to that word on Dictonary.com
+[dic=(word)][/dic] - See above.
+[code][/code] - Creates a code box, no more BBCode can be used.
+[code=python][/code] - Code Box, reconizes Python.
+[code=JSON][/code] - Code Box, reconizes JSON.
+[code=HTML][/code] - Code Box, reconizes HTML.
