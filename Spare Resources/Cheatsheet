@@ -1,0 +1,26 @@
+<p id="02"></p>
+[b][/b] - <b>bold</b>
+[i][/i] - <i>Italics</i>
+[u][/u] - <u>Underline</u>
+[s][/s] - <s>Strikethrough</s>
+[big][/big] - big
+[small][/small] - small
+[list][/list] - creates list
+[list=(number)][/list] - list starting at number
+[*] - List Item
+[quote=(person)][/quote] - Quote someone
+[url][/url] - URL
+[img][/img] - Image. Does not work if you are a new scratcher.
+[color=][/color] - Simple Colors, like red and blue.
+[color=(hex)][/color] - Color of any hex. <input type="color">
+[center][/center] - Centers text,
+[wiki=(wiki page)][/wiki] - Links to Scratch Wiki (of same name)
+[wikipedia=(wikipedia page)][/wikipedia] - Links to Wikipedia page
+[wp=(wikipedia page)][/wp] - See above.
+[google=(term)][/google] - Googles the term.
+[dictonary=(word)][/dictonary] - Links to that word on Dictonary.com
+[dic=(word)][/dic] - See above.
+[code][/code] - Creates a code box, no more BBCode can be used.
+[code=python][/code] - Code Box, reconizes Python.
+[code=JSON][/code] - Code Box, reconizes JSON.
+[code=HTML][/code] - Code Box, reconizes HTML.
