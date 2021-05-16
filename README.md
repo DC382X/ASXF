@@ -1,4 +1,7 @@
 # ASXF
-This is the super-version of the BARELY Functional ASBF.
-## Combat the spam!
-Use this to fight the spam or make quick reply!
+[Darkest Lord Gets Louder](https://www.youtube.com/watch?v=oFhCQPcOWvQ) 
+###### From Miitopia
+## Combat spam!
+Use this to fight spammers, pretty much anywhere messaging is allowed!
+## Use this for quick replying!
+This allows you to make quick relpies, without having to write it out!
