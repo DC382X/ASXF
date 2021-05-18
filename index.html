@@ -14,7 +14,10 @@ Text: <input id="TXT" size="158" placeholder="The text of the bookmarklet goes h
 Name: <input id="IXI" size="157" placeholder="The name of the bookmarklet goes here..."><br>
   <center><button onclick="OSI()">Set name to text</button><button onclick="reset()">Reset</button><br>
     <button onclick="help()">Help</button><button onclick="ZlZ()">Cheatsheat for BBCode</button>
-    <input id="bold" type="checkbox"> Bold
+    <br><input id="bold" type="checkbox"> Bold
+    <br><input id="itc" type="checkbox"> Italics
+    <br><input id="under" type="checkbox"> Underline
+    <br><input id="strike" type="checkbox"> Strikeout
   </center>
 <script> 
 var count = 0
@@ -27,6 +30,21 @@ var after = ""
 if(lorem == true){
 before = "<b>[b]" 
 after = "[/b]</b>"
+}
+var lorem = document.getElementById("itc").checked // Get the value
+if(lorem == true){
+before = before+"<i>[i]" 
+after = after+"[/i]</i>"
+}
+var lorem = document.getElementById("under").checked // Get the value
+if(lorem == true){
+before = before+"<u>[u]" 
+after = after+"[/u]</u>"
+}
+var lorem = document.getElementById("strike").checked // Get the value
+if(lorem == true){
+before = before+"<s>[s]" 
+after = after+"[/s]</s>"
 }
 if(r == ""){
 document.getElementById("01").innerHTML = ('<style>body { background:#fff; font-family:Arial; margin:0; padding:0; }</style><p style="color:Red">Please put text in both places!!')
