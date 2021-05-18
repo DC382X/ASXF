@@ -15,13 +15,13 @@ Name: <input id="IXI" size="157" placeholder="The name of the bookmarklet goes h
 <center><button onclick="OSI()">Set name to text</button><button onclick="reset()">Reset</button><br>
 <button onclick="help()">Help</button><button onclick="ZlZ()">Cheatsheat for BBCode</button>
 </center>
-    <br><input id="bold" type="checkbox"> Bold
-    <br><input id="itc" type="checkbox"> Italics
-    <br><input id="under" type="checkbox"> Underline
-    <br><input id="strike" type="checkbox"> Strikeout
-    <br><input type="color" id="clr" value="#000000"> Color
+<input id="bold" type="checkbox"> Bold
+<br><input id="itc" type="checkbox"> Italics
+<br><input id="under" type="checkbox"> Underline
+<br><input id="strike" type="checkbox"> Strikeout
+<br><input type="color" id="clr" value="#000000"> Color
 <script> 
-var count = 0
+var count = 1
 setInterval(function(){
 var r = document.getElementById("TXT").value
 var s = document.getElementById("IXI").value
@@ -74,8 +74,7 @@ document.getElementById("01").innerHTML = ('<style>body { background:#fff; font-
   }
   function help(){
   document.getElementById("02").innerHTML = ('Tips: Use "&lt;br&gt;" to break lines and have seperated code.<br>Use <input value="&lt;script&gt;&lt;/script&gt;" size="98" readonly>for some really fancy stuff.')
-  count++
-  count = count - Math.floor(-.1*count)
+  count += Math.ceil(.1*count)
   document.getElementById("03").innerHTML = ('&Omega; x '+count)
   }
 function OSI() {
