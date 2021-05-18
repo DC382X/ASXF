@@ -12,21 +12,27 @@
   </center>
 Text: <input id="TXT" size="158" placeholder="The text of the bookmarklet goes here..." onkeypress="keset()"><br>
 Name: <input id="IXI" size="157" placeholder="The name of the bookmarklet goes here..."><br>
-  <center><button onclick="OSI()">Set name to text</button><button onclick="reset()">Reset</button><br>
-    <button onclick="help()">Help</button><button onclick="ZlZ()">Cheatsheat for BBCode</button>
+<center><button onclick="OSI()">Set name to text</button><button onclick="reset()">Reset</button><br>
+<button onclick="help()">Help</button><button onclick="ZlZ()">Cheatsheat for BBCode</button>
+</center>
     <br><input id="bold" type="checkbox"> Bold
     <br><input id="itc" type="checkbox"> Italics
     <br><input id="under" type="checkbox"> Underline
     <br><input id="strike" type="checkbox"> Strikeout
-  </center>
+    <br><input type="color" id="clr" value="#000000"> Color
 <script> 
 var count = 0
 setInterval(function(){
 var r = document.getElementById("TXT").value
 var s = document.getElementById("IXI").value
-var lorem = document.getElementById("bold").checked // Get the value
 var before = ""
 var after = ""
+var lorem = document.getElementById("clr").checked // Get the value
+if(lorem != "#000000"){
+before = "<p style='color:"+lorem+"'>[color="+lorem+"]" 
+after = "[/color]</p>"
+}
+var lorem = document.getElementById("bold").checked // Get the value
 if(lorem == true){
 before = "<b>[b]" 
 after = "[/b]</b>"
