@@ -17,6 +17,7 @@ Name: <input id="IXI" size="157" placeholder="The name of the bookmarklet goes h
 </center>
 <details>
 <summary> Options </summary>
+<input id="ALL" type="checkbox"> Check All  
 <input id="bold" type="checkbox"> Bold
 <br><input id="itc" type="checkbox"> Italics
 <br><input id="under" type="checkbox"> Underline
@@ -26,6 +27,12 @@ Name: <input id="IXI" size="157" placeholder="The name of the bookmarklet goes h
 <script> 
 var count = 1
 setInterval(function(){
+if (document.getElementById("ALL").checked == true){
+document.getElementById("bold").checked == true
+  document.getElementById("itc").checked == true
+  document.getElementById("under").checked == true
+  document.getElementById("strike").checked == true
+}  
 var r = document.getElementById("TXT").value
 var s = document.getElementById("IXI").value
 var before = ""
