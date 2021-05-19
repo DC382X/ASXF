@@ -13,8 +13,8 @@
 Text: <input id="TXT" size="158" placeholder="The text of the bookmarklet goes here..." onkeypress="keset()"><br>
 Name: <input id="IXI" size="157" placeholder="The name of the bookmarklet goes here..."><br>
 <center><button onclick="OSI()">Set name to text</button><button onclick="reset()">Reset</button><br>
-<button onclick="help()">Help</button>
-</center>
+  <details><summary>Help</summary>Tips: Use "&lt;br&gt;" to break lines and have seperated code.<br>Use <input value="&lt;script&gt;&lt;/script&gt;" size="98" readonly>for some really fancy stuff.<br>Use <input value="&lt;details&gt;&lt;summary&gt;&lt;/summary&gt;(your text)&lt;/details&gt;" size="98" readonly></details> This can be used for condensed text.<br><input value="&lt;h5&gt;&lt;/h5&gt;" size="98" readonly> For different text.
+  </center>
 <details>
 <summary> Options </summary>
 <input id="ALL" type="checkbox"> Check All  
@@ -81,11 +81,6 @@ document.getElementById("01").innerHTML = ('<style>body { background:#fff; font-
     if(qwe == "95"){
     reset();
    }
-  }
-  function help(){
-  document.getElementById("02").innerHTML = ('Tips: Use "&lt;br&gt;" to break lines and have seperated code.<br>Use <input value="&lt;script&gt;&lt;/script&gt;" size="98" readonly>for some really fancy stuff.')
-  count += Math.ceil(.1*count)
-  document.getElementById("03").innerHTML = ('&Omega; x '+count)
   }
 function OSI() {
  var m = document.getElementById("TXT").value
