@@ -1,5 +1,5 @@
 <html>
-  <title>ASBF III</title>
+  <title>ASBF V</title>
   <head>
     <link rel="shortcut icon" href="https://i.ibb.co/2NYnHbm/Screenshot-2021-05-05-07-50-48.png" />
   </head>
@@ -23,6 +23,7 @@ Name: <input id="IXI" size="157" placeholder="The name of the bookmarklet goes h
 <br><input id="under" type="checkbox"> Underline
 <br><input id="strike" type="checkbox"> Strikeout
 <br><input type="color" id="clr" value="#000000"> Color
+  <br> <button onclick="T1()">Dual</button>
 </details>
 <script> 
 var count = 1
@@ -87,7 +88,7 @@ function OSI() {
     document.getElementById("IXI").value = m
 }
   function T1() {
-    document.getElementById("TXT").value = '<script>var a=prompt(&quot;Lorem Ipsum&quot;);document.write(a+&quot; Lorem Ispum&quot;)<script>'
+    document.getElementById("TXT").value = '<details><summary>1</summary>Lorem</details><details><summary>2</summary>Ispum.</details>'
   }
 function reset() {
  document.getElementById("TXT").value = ""
