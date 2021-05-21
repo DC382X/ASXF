@@ -3,7 +3,34 @@
   <head>
     <link rel="shortcut icon" href="https://i.ibb.co/2NYnHbm/Screenshot-2021-05-05-07-50-48.png" />
   </head>
-  <link rel="stylesheet" type="text/css" href="Spare Resources/ripple button.css">
+  <style>
+body {
+  margin: 20px;
+}
+
+.reset {
+  background: firebrick;
+  padding: 10px 20px;
+  border-radius: 200000px;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  border: 0px solid #firebrick;
+}
+
+.reset:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 1px;
+  border: 0px solid #000000;
+}
+.reset:hover {background-color: darkred}
+</style>
   <center>
     <h1>
       A.S.B.F.
@@ -13,7 +40,7 @@
   </center>
 Text: <input id="TXT" size="158" placeholder="The text of the bookmarklet goes here..." onkeypress="keset()"><br>
 Name: <input id="IXI" size="157" placeholder="The name of the bookmarklet goes here..."><br>
-<center><button onclick="OSI()">Set name to text</button><button onclick="reset()">Reset</button><br>
+<center><button onclick="OSI()">Set name to text</button><button onclick="reset()" class="reset">Reset</button><br>
   <details><summary>Help</summary>Tips: Use "&lt;br&gt;" to break lines and have seperated code.<br>Use <input value="&lt;script&gt;&lt;/script&gt;" size="98" readonly>for some really fancy stuff.<br>Use <input value="&lt;details&gt;&lt;summary&gt;&lt;/summary&gt;(your text)&lt;/details&gt;" size="98" readonly> This can be used for condensed text.<br><input value="&lt;h5&gt;&lt;/h5&gt;" size="98" readonly> For different text.</details>
   </center>
 <details>
