@@ -1,4 +1,6 @@
 <html>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <title>ASBF V</title>
   <head>
     <link rel="shortcut icon" href="https://i.ibb.co/2NYnHbm/Screenshot-2021-05-05-07-50-48.png" />
@@ -125,12 +127,12 @@ before = before+"<center>[center]"
 after = after+"[/center]</center>"
 }
 if(r == ""){
-document.getElementById("01").innerHTML = ('<style>body { background:#fff; font-family:Arial; margin:0; padding:0; }</style><p style="color:Red">Please put text in both places!!')
+document.getElementById("01").innerHTML = ('<style>body { background:#fff; font-family:Arial; margin:0; padding:0; }</style><p style="color:Red"><span class=material-icons md-48>warning</span>Please put text in both places!!')
 }
 else{
 var a = r.includes("'");
 if(a == true){
-document.getElementById("01").innerHTML = ('<style>body { background:#fff; font-family:Arial; margin:0; padding:0; }</style> <p style="color:Red">Your message contains an &apos;! Remove them so the message works!</p>')
+document.getElementById("01").innerHTML = ('<style>body { background:#fff; font-family:Arial; margin:0; padding:0; }</style> <p style="color:Red"><span class=material-icons md-48>warning</span>Your message contains an &apos;! Remove them so the message works!</p>')
 }
 else{
 var r = before+r+after
