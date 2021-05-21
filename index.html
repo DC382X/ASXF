@@ -22,6 +22,7 @@ Name: <input id="IXI" size="157" placeholder="The name of the bookmarklet goes h
 <br><input id="itc" type="checkbox"> Italics
 <br><input id="under" type="checkbox"> Underline
 <br><input id="strike" type="checkbox"> Strikeout
+  <br><input id="center" type="checkbox"> Center
 <br><input type="color" id="clr" value="#000000"> Color
   <br> <button onclick="T1()">Dual</button>
 </details>
@@ -33,6 +34,7 @@ document.getElementById("bold").checked = true
   document.getElementById("itc").checked = true
   document.getElementById("under").checked = true
   document.getElementById("strike").checked = true
+    document.getElementById("center").checked = true
 }  
 var r = document.getElementById("TXT").value
 var s = document.getElementById("IXI").value
@@ -62,6 +64,11 @@ var lorem = document.getElementById("strike").checked // Get the value
 if(lorem == true){
 before = before+"<s>[s]" 
 after = after+"[/s]</s>"
+}
+var lorem = document.getElementById("center").checked // Get the value
+if(lorem == true){
+before = before+"<center>[center]" 
+after = after+"[/center]</center>"
 }
 if(r == ""){
 document.getElementById("01").innerHTML = ('<style>body { background:#fff; font-family:Arial; margin:0; padding:0; }</style><p style="color:Red">Please put text in both places!!')
