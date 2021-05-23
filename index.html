@@ -83,6 +83,7 @@ Name: <input id="IXI" size="157" placeholder="The name of the bookmarklet goes h
   <br><input id="center" type="checkbox"> Center
 <br><input type="color" id="clr" value="#000000"> Color
   <br> <button onclick="T1()">Dual</button>
+  <br> <button onclick="T2()">Trio</button>
 </details>
 <script> 
 var count = 1
@@ -156,6 +157,9 @@ function OSI() {
 }
   function T1() {
     document.getElementById("TXT").value = '<details><summary>1</summary>Lorem</details><details><summary>2</summary>Ispum.</details>'
+  }
+    function T2() {
+    document.getElementById("TXT").value = '<details><summary>1</summary>Lorem</details><details><summary>2</summary>Ispum.</details><details><summary>3</summary>Dolor</details>'
   }
 function reset() {
  document.getElementById("TXT").value = ""
