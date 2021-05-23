@@ -74,7 +74,8 @@ Name: <input id="IXI" size="157" placeholder="The name of the bookmarklet goes h
   </center>
 <details>
 <summary> Options </summary>
-<input id="ALL" type="checkbox"> Check All  
+<input id="keyse" type="checkbox"> _ reset on/off
+<br>BBCode:<br><input id="ALL" type="checkbox"> Check All  
 <br><input id="bold" type="checkbox"> Bold
 <br><input id="itc" type="checkbox"> Italics
 <br><input id="under" type="checkbox"> Underline
@@ -142,10 +143,12 @@ document.getElementById("01").innerHTML = ('<title>Tech</title><a href="javascri
 }
 },250)
   function keset(){
+        if(document.getElementById("center").checked == true){
     var qwe = event.which || event.keyCode;
     if(qwe == "95"){
     reset();
    }
+  }
   }
 function OSI() {
  var m = document.getElementById("TXT").value
